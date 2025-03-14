@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.TableCell?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.geometry.Insets?>
+
+<AnchorPane fx:controller="application.ServiceProviderListController"
+           xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1"
+           style="-fx-background-color: #FFB6C1;" prefWidth="800.0" prefHeight="600.0">
+    <children>
+        <!-- TableView to display service provider data -->
+        <TableView fx:id="serviceProviderTable" layoutX="50.0" layoutY="50.0" prefWidth="700.0" prefHeight="400.0">
+            <!-- Columns for displaying service provider data -->
+            <columns>
+                <TableColumn fx:id="nameColumn" text="Name" prefWidth="150.0" />
+                <TableColumn fx:id="serviceColumn" text="Service" prefWidth="200.0" />
+                <TableColumn fx:id="emailColumn" text="Email" prefWidth="200.0" />
+                <TableColumn fx:id="phoneColumn" text="Phone" prefWidth="150.0" />
+                <TableColumn fx:id="ratingColumn" text="Rating" prefWidth="100.0" />
+            </columns>
+        </TableView>
+
+        <!-- Read Feedback Button -->
+        <Button fx:id="readFeedbackButton" text="Read Feedback" layoutX="50.0" layoutY="500.0"
+                prefWidth="120.0" style="-fx-background-color: #DE5D83;" onAction="#readFeedback">
+            <font>
+                <Font name="Arial" size="16.0" />
+            </font>
+        </Button>
+
+        <!-- Delete Service Provider Button -->
+        <Button fx:id="deleteServiceProviderButton" text="Delete Provider" layoutX="200.0" layoutY="500.0" 
+                prefWidth="120.0" style="-fx-background-color: #DE5D83;" onAction="#handleDeleteServiceProvider" 
+                disable="true">
+            <font>
+                <Font name="Arial" size="16.0" />
+            </font>
+        </Button>
+
+        <!-- Back Button -->
+        <Button fx:id="backButton" text="Back" layoutX="350.0" layoutY="500.0" 
+                prefWidth="100.0" style="-fx-background-color: #DE5D83;" onAction="#handleBackButton">
+            <font>
+                <Font name="Arial" size="16.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>

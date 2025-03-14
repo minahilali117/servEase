@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FFB6C1;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.sampleController">
+   <children>
+      <!-- Label moved towards the left by decreasing the layoutX value -->
+      <Label layoutX="50.0" layoutY="50.0" prefHeight="72.0" prefWidth="459.0" text="Admin Dashboard">
+         <font>
+            <Font name="System Bold Italic" size="50.0" />
+         </font>
+      </Label>
+
+      <!-- Button to View Customers -->
+      <Button fx:id="viewCustomersBtn" layoutX="180.0" layoutY="200.0" mnemonicParsing="false" onAction="#viewCustomers" prefHeight="26.0" prefWidth="200.0" style="-fx-background-color: DE5D83;" text="View All Customers" textAlignment="CENTER">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Button>
+
+      <!-- Button to View Service Providers -->
+      <Button fx:id="viewServiceProvidersBtn" layoutX="180.0" layoutY="258.0" mnemonicParsing="false" onAction="#viewServiceProviders" prefHeight="26.0" prefWidth="200.0" style="-fx-background-color: DE5D83;" text="View All Service Providers" textAlignment="CENTER">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

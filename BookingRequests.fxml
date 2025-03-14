@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FFB6C1;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.sampleController">
+   <children>
+      <ScrollPane layoutX="58.0" layoutY="80.0" prefHeight="239.0" prefWidth="482.0">
+         <content>
+            <TableView fx:id="tableView" prefHeight="229.0" prefWidth="482.0">
+               <columns>
+                  <TableColumn fx:id="Name" prefWidth="124.79995042085648" text="Service" />
+                  <TableColumn fx:id="Rate" prefWidth="112.80000305175781" text="Date" />
+                  <TableColumn fx:id="Category" prefWidth="114.40003967285156" text="Duration" />
+                  <TableColumn prefWidth="114.39996337890625" text="Rate" />
+               </columns>
+            </TableView>
+         </content>
+      </ScrollPane>
+      <Button fx:id="viewClientProfileBtn" layoutX="142.0" layoutY="342.0" mnemonicParsing="false" onAction="#viewClientProfile" prefHeight="26.0" prefWidth="119.0" style="-fx-background-color: DE5D83;" text="View Client Profile" />
+      <Label layoutX="133.0" layoutY="14.0" prefHeight="55.0" prefWidth="331.0" text="Booking Requests">
+         <font>
+            <Font name="System Bold" size="38.0" />
+         </font>
+      </Label>
+      <Button fx:id="acceptRequestBtn" layoutX="314.0" layoutY="342.0" mnemonicParsing="false" onAction="#acceptRequest" prefHeight="26.0" prefWidth="119.0" style="-fx-background-color: DE5D83;" text="Accept Request" />
+   </children>
+</AnchorPane>

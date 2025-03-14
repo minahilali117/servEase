@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="signupPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: #FFB6C1;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.sampleController">
+   <children>
+      <!-- App Title -->
+      <Label layoutX="182.0" layoutY="41.0" text="ServEase">
+         <font>
+            <Font name="System Bold Italic" size="58.0" />
+         </font>
+      </Label>
+      
+      <!-- Form Header -->
+      <Label layoutX="256.0" layoutY="100.0" prefHeight="35.0" prefWidth="87.0" text="SIGNUP" textAlignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      
+      <!-- Name Field -->
+      <Label layoutX="153.0" layoutY="149.0" prefHeight="26.0" prefWidth="58.0" text="NAME" textAlignment="RIGHT">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="name" layoutX="225.0" layoutY="150.0" />
+      
+      <!-- Email Field -->
+      <Label layoutX="153.0" layoutY="199.0" prefHeight="26.0" prefWidth="58.0" text="EMAIL" textAlignment="RIGHT">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="email" layoutX="225.0" layoutY="200.0" />
+      
+      <!-- Password Field -->
+      <Label layoutX="116.0" layoutY="249.0" prefHeight="26.0" prefWidth="87.0" text="PASSWORD" textAlignment="RIGHT">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="password" layoutX="225.0" layoutY="250.0" />
+
+      <!-- Phone Field -->
+      <Label layoutX="153.0" layoutY="299.0" prefHeight="26.0" prefWidth="58.0" text="PHONE" textAlignment="RIGHT">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="phone" layoutX="225.0" layoutY="300.0" />
+
+      <!-- Signup Button -->
+      <Button fx:id="confirmSignupBtn" layoutX="256.0" layoutY="350.0" mnemonicParsing="false" onAction="#confirmSignup" prefHeight="26.0" prefWidth="87.0" style="-fx-background-color: DE5D83;" text="SIGNUP" />
+   </children>
+</AnchorPane>

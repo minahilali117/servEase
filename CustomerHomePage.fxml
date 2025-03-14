@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550" prefWidth="750" style="-fx-background-color: #FFB6C1;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.sampleController">
+   <children>
+      <Button fx:id="viewProfileBtn" layoutX="278.0" layoutY="138.0" mnemonicParsing="false" onAction="#viewProfile" prefHeight="54.0" prefWidth="194.0" style="-fx-background-color: DE5D83; -fx-border-color: #6b0e4f; -fx-border-width: 3px 3px 3px 3px;" text="VIEW PROFILE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="browseServicesBtn" layoutX="278.0" layoutY="214.0" mnemonicParsing="false" onAction="#browseServices" prefHeight="54.0" prefWidth="194.0" style="-fx-background-color: DE5D83; -fx-border-color: #6b0e4f; -fx-border-width: 3px 3px 3px 3px;" text="BROWSE SERVICES">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="viewBookingHistoryBtn" layoutX="278.0" layoutY="288.0" mnemonicParsing="false" onAction="#viewBookingHistory" prefHeight="54.0" prefWidth="194.0" style="-fx-background-color: DE5D83; -fx-border-color: #6b0e4f; -fx-border-width: 3px 3px 3px 3px;" text="VIEW BOOKING HISTORY">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="getHelpBtn" layoutX="278.0" layoutY="360.0" mnemonicParsing="false" onAction="#getHelp" prefHeight="54.0" prefWidth="194.0" style="-fx-background-color: DE5D83; -fx-border-color: #6b0e4f; -fx-border-width: 3px 3px 3px 3px;" text="GET HELP">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="257.0" layoutY="427.0" text="ServEase">
+         <font>
+            <Font name="System Bold Italic" size="58.0" />
+         </font>
+      </Label>
+      <Label layoutX="299.0" layoutY="36.0" text="HOME">
+         <font>
+            <Font name="System Bold" size="50.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="148.0" fitWidth="183.0" layoutX="591.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image-removebg-preview.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

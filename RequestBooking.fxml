@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="goBackToServicesBtn" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onDragDetected="#goBackToServicesBtn" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FFB6C1;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.sampleController">
+   <children>
+      <Label layoutX="213.0" layoutY="23.0" prefHeight="78.0" prefWidth="174.0" text="ServEase">
+         <font>
+            <Font name="System Bold Italic" size="41.0" />
+         </font>
+      </Label>
+      <Label layoutX="256.0" layoutY="146.0" prefHeight="35.0" prefWidth="87.0" textAlignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="163.0" layoutY="119.0" prefHeight="31.0" prefWidth="51.0" text="Date" textAlignment="RIGHT">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="164.0" layoutY="187.0" prefHeight="31.0" prefWidth="51.0" text="Time" textAlignment="RIGHT">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="99.0" fitWidth="132.0" layoutX="479.0" layoutY="287.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="118.0" layoutY="247.0" prefHeight="31.0" prefWidth="106.0" text="# of hours" textAlignment="RIGHT">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="timeComboBox" layoutX="256.0" layoutY="190.0" prefWidth="150.0" />
+      <DatePicker fx:id="datePicker" layoutX="256.0" layoutY="121.0" prefHeight="26.0" prefWidth="150.0" />
+      <Spinner fx:id="hoursSpinner" layoutX="257.0" layoutY="250.0" />
+      <Button fx:id="goBackToServicesBtn" layoutX="55.0" layoutY="323.0" mnemonicParsing="false" onAction="#goBackToServices" prefHeight="26.0" prefWidth="132.0" style="-fx-background-color: DE5D83;" text="Go Back To Services" />
+   </children>
+</AnchorPane>
